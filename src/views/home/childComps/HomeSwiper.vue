@@ -1,3 +1,4 @@
+<!--轮播图-->
 <template>
   <swiper>
     <swiper-item v-for="(item,id) in banners" :key="id">

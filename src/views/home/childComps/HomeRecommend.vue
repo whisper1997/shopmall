@@ -1,3 +1,4 @@
+<!--轮播图下的链接点击-->
 <template>
   <div id="homerecommend">
     <div v-for="(item,sort) in recommends" :key="sort" class="recommend_item">

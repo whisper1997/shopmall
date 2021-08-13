@@ -27,7 +27,8 @@
     },
     methods:{
       itemClick(index){
-        this.currentIndex == index
+        this.currentIndex = index ;
+        this.$emit('tabClick',this.currentIndex);
       }
     }
   }
@@ -37,9 +38,9 @@
   .tab_control{
     display: flex;
     width: 100%;
-    height: 49px;
+    /*height: 49px;*/
     line-height: 40px;
-    border-top: 8px solid #eee;
+    background-color: #fff;
   }
   .tab_control_item{
     flex: 1;
